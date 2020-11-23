@@ -38,7 +38,7 @@ void setup() {
 
 void loop() {
   if (millis() >= (oldMillis + 500)) { // count pulses for 500mS
-    RPM = (pulseCount * 0.642); // convert pulses to rpm. Alter this figure to calibrate.
+    RPM = (pulseCount * 0.73); // convert pulses to rpm. Alter this figure to calibrate.
     pulseCount = 0; // reset
     oldMillis = millis();
   }
